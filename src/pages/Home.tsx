@@ -30,7 +30,9 @@ const Home = () => {
 
   return (
     <>
-      <Histogram data={data} loading={loading} />{" "}
+      <h3>Data fetching and visualization</h3>
+      {!loading && <Histogram data={data} />}
+      <p>by Ryan Boros</p>
     </>
   );
 };
